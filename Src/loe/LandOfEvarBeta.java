@@ -55,6 +55,11 @@ public class LandOfEvarBeta
  
  public static Block PureEvarGrass;
  
+ //Diemension 
+ public static int dimensionId = 8;
+	
+	EventManager eventmanager = new EventManager();
+	
 private Object itemIcon;
  
 
