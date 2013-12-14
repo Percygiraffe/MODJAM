@@ -44,6 +44,26 @@ public class LandOfEvarBeta
  
  public static Item PhilophersShard;
  
+ public static Item PureSoul;
+ 
+ public static Item DeathlySoul;
+ 
+ public static Item Exsplosionsoul;
+ 
+ public static Item FireySoul;
+ 
+ public static Item UltimateEnderSoul;
+ 
+ public static Item Waterysoul;
+ 
+ public static Item UltimateSoul;
+ 
+ public static Item Pureflame;
+ 
+ public static Item PureDrop;
+ 
+ 
+ 
  //Blocks
  public static Block CourruptedGrass;
  
@@ -57,11 +77,7 @@ public class LandOfEvarBeta
  
  public static Block SoulContainer;
  
- //Diemension 
- public static int dimensionId = 8;
-	
-	EventManager eventmanager = new EventManager();
-	
+
 private Object itemIcon;
  
 
@@ -91,9 +107,21 @@ colourleaf = new Itemcolourleaf(3088).setUnlocalizedName("CL").setTextureName("p
 
 Deathsjournal = new ItemDeathsjournal(3089).setUnlocalizedName("DJ").setTextureName("percy:Colourshard"); 
 
-PhilophersShard = new ItemPhilophersShard(3093).setUnlocalizedName("PS").setTextureName("Percy:LandOfEvar");
+PureSoul = new ItemPureSoul(3093).setUnlocalizedName("PS").setTextureName("Percy:LandOfEvar").setCreativeTab(CreativeTabs.tabMaterials);
 
+DeathlySoul = new ItemDeathlySoul(3101).setUnlocalizedName("PS").setTextureName("Percy:LandOfEvar").setCreativeTab(CreativeTabs.tabMaterials);
 
+Exsplosionsoul = new ItemExsplosionsoul(3095).setUnlocalizedName("PS").setTextureName("Percy:LandOfEvar").setCreativeTab(CreativeTabs.tabMaterials);
+
+FireySoul = new ItemFireySoul(3096).setUnlocalizedName("PS").setTextureName("Percy:LandOfEvar").setCreativeTab(CreativeTabs.tabMaterials);
+
+UltimateEnderSoul = new ItemUltimateEnderSoul(3097).setUnlocalizedName("PS").setTextureName("Percy:LandOfEvar").setCreativeTab(CreativeTabs.tabMaterials);
+
+Waterysoul = new ItemWaterysoul(3098).setUnlocalizedName("PS").setTextureName("Percy:LandOfEvar").setCreativeTab(CreativeTabs.tabMaterials);
+
+Pureflame = new ItemPureflame(3099).setUnlocalizedName("PS").setTextureName("Percy:LandOfEvar").setCreativeTab(CreativeTabs.tabMaterials);
+
+PureDrop = new ItemPureDrop(3100).setUnlocalizedName("PS").setTextureName("Percy:LandOfEvar").setCreativeTab(CreativeTabs.tabMaterials);
 
 
 //Blocks
@@ -113,7 +141,7 @@ PureEvarGrass =  new BlockPureEvarGrass(3095,Material.grass).setUnlocalizedName(
 GameRegistry.registerBlock(PureEvarGrass, modid + PureEvarGrass.getUnlocalizedName().substring(5));
 
 
-SoulContainer = new BlockSoulContainer(3096,Material.portal).setUnlocalizedName("SC");
+
 
 //Diemension
 
@@ -156,4 +184,12 @@ LanguageRegistry.addName(PureEvarGrass,"Pure Evar Grass");
 	
 	
        }
+
+
+
+
+private Block ItemDeathlySoul(int i) {
+	// TODO Auto-generated method stub
+	return null;
+}
 }
